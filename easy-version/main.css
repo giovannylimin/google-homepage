@@ -1,0 +1,55 @@
+*{
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*
+================
+HEADER
+================
+*/
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+header li {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 8px;
+    font-size: 14px;
+    color: #555555;
+}
+header li button{
+    background-color: transparent;
+    box-shadow: transparent;
+    border: transparent;
+    opacity: 0.5;
+}
+header li input[type="image"]{
+    height: 36px;
+}
+
+header li a:hover{
+    opacity: 0.9;
+    text-decoration: underline;
+}
+header li a:visited{
+    color:#555555
+}
+header li button:hover{
+    opacity: 0.7
+}
