@@ -42,6 +42,7 @@ header li input[type="image"]{
     height: 36px;
 }
 header li a:link{
+    text-decoration: none;
     color: #555555;
 }
 header li a:hover{
