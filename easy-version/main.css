@@ -31,7 +31,6 @@ header li {
     box-sizing: border-box;
     margin: 8px;
     font-size: 14px;
-    color: #555555;
 }
 header li button{
     background-color: transparent;
@@ -42,7 +41,9 @@ header li button{
 header li input[type="image"]{
     height: 36px;
 }
-
+header li a:link{
+    color: #555555;
+}
 header li a:hover{
     opacity: 0.9;
     text-decoration: underline;
