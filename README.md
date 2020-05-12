@@ -28,4 +28,5 @@ I down-sized the images used in icons to make it load faster.
 
 This project is made in my corona quarantine, so I used the medical staff image for the profile picture and if you hover over it, it will show a message!
 
-contact me via instagram: instagram.com/giovanny.limin
+contact me via instagram: 
+[@giovanny.limin](instagram.com/giovanny.limin)
