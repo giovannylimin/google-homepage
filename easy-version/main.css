@@ -128,6 +128,43 @@ header li button:hover{
     opacity: 0.7
 }
 
+#message{
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 12px;
+    background-image: linear-gradient(to bottom left, #aa4b6b, #6b6b83, #3b8d99 );
+    border: 1px solid;
+    line-height: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#message::after{   
+    content: "";
+    border: solid 10px;
+    border-color: transparent transparent #aa4b6b transparent;
+    position: absolute;
+    color: white;
+    top: -20px;
+    right: 18px;
+}
+
+#profile:hover + #message{
+    visibility: visible;
+    opacity: 1;
+}
+
+#profile:active +#message{
+    visibility: visible;
+}
 /*
 ================
 SEARCH BAR
