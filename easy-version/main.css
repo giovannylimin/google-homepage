@@ -143,8 +143,9 @@ main img{
     box-sizing: border-box;
     margin: 25px auto;
     width: 455px;
-    height: 100px;
+    height: 50px;
     position: relative;
+    border: 1px solid transparent;
 }
 #search{
     display: inline-block;
@@ -208,7 +209,8 @@ main img{
     font-weight: bold;
     position: absolute;
     text-align: center;
-    margin: 18px 0 0 -77.5px;
+    top: 50px;
+    right: -18px;
     padding: 7px 8px;
   }
 
@@ -233,7 +235,7 @@ main img{
 
   /*
 ================
-MAIN BUTTONS
+MIDDLE BUTTONS
 ================
 */
 
@@ -244,8 +246,8 @@ MAIN BUTTONS
 
 .others button{
     box-sizing: border-box;
-    margin: 0px 5px;
-    padding: 8px 10px;
+    margin: 10px 5px;
+    padding: 8px 12px;
     border: solid 1px;
     border-color: #efefef;
     border-radius: 3px;
@@ -259,8 +261,8 @@ MAIN BUTTONS
     background-color: #f1f1f1;
     color: #333333;
 }
-p{
-    margin: 25px;
+main p{
+    margin: 20px;
     text-align: center;
     font-size: 13px;
     color: #333333;
@@ -269,11 +271,64 @@ p a{
     margin: 0 5px;
 }
 p a:link{
-    color: #2222bb;
+    color: #4411bb;
 }
-p a:hover{
+a:hover{
     text-decoration: underline;
 }
 p a:visited{
-    color: #2222bb;
+    color: #4411bb;
+}
+
+  /*
+================
+FOOTER
+================
+*/
+
+footer{
+    /*border-top: 1px solid #bbbbbb;*/
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background-color: #efefef;
+    border-top: #dddddd solid 1px;
+    display:flex;
+    flex-direction: column;
+
+}
+#location{
+    float:left;
+    font-family: Arial;
+    color: #888888;
+    font-size: 15px;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+footer nav{
+    overflow: hidden;
+    background-color: #efefef;
+    border-top: 1px solid #dddddd;
+
+}
+
+footer nav ul li{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    font-size: 14px;
+}
+footer nav a{
+    font-family: Arial;
+    color: #666666
+}
+#left-side{
+    clear: left;
+    float: left;
+    margin-left: 10px;
+}
+#right-side{
+    clear: right;
+    float: right;
 }
