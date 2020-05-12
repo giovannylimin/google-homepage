@@ -1,19 +1,27 @@
 *{
     font-family: Arial;
 }
+
+body{
+    overflow: scroll;
+    background-color: #FFFFFF;
+}
 a{
     text-decoration: none;
 }
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
+
 /*
 ================
 HEADER
@@ -24,34 +32,139 @@ header ul{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
 }
+
 header li {
     display: inline-block;
     box-sizing: border-box;
     margin: 8px;
     font-size: 14px;
 }
+
 header li button{
     background-color: transparent;
     box-shadow: transparent;
     border: transparent;
     opacity: 0.5;
 }
+
 header li input[type="image"]{
     height: 36px;
 }
+
 header li a:link{
     text-decoration: none;
     color: #555555;
 }
+
 header li a:hover{
     opacity: 0.9;
     text-decoration: underline;
 }
+
 header li a:visited{
     color:#555555
 }
+
 header li button:hover{
     opacity: 0.7
 }
+
+/*
+================
+SEARCHBAR
+================
+*/
+main img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    display: inline-block;
+    height: 40px;
+    width: 400px;
+    margin: 25px 0;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px 12px;
+    padding-left: 50px;
+    font-size: 15.5px;
+}
+
+main input[type="reset"]{
+    visibility: hidden;
+    transition-delay: 0.1s;
+    background-color: #ffffff;
+    position: relative;
+    top: 2px;
+    margin-left: -90px;
+    background-image: url(./img/close-icon.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 0px 0px;
+    padding-left: 30px;
+    width: 25px;
+    height: 25px;
+    border: solid 1px;
+    border-color:transparent #dddddd transparent transparent;
+}
+
+input:focus + input[type="reset"]{
+    visibility: visible;
+}
+
+#search:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #dddddd;
+}
+
+#search:hover{
+    box-shadow: 0px 0px 5px #dddddd;
+}
+
+#mic{
+    width: 13px;
+    margin: 0px 0 0 -35px;
+}
+
+#tooltip-text{
+    visibility: hidden;
+    font-size: 11px;
+    color: #FFFFFF;
+    background-color: #333333;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    margin: 18px 0 0 -77.5px;
+    padding: 7px 8px;
+  }
+  
+  #tooltip-text::after{
+    content: "";
+    color: black;
+    position: absolute;
+    bottom: 100%;
+    border: solid 5px;
+    border-color: transparent transparent#333333 transparent;
+    margin-left: -5px;
+    left: 50%;
+  }
+
+  #tooltip:hover #tooltip-text{
+      visibility: visible;
+  }
+
+  #tooltip:active{
+      visibility: visible;
+  }

@@ -5,6 +5,7 @@
         <title>Google</title>
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="img/google-search-icon.png" rel="icon" type="image/png" sizes="16x16">
     </head>
     <body>
         <header>
@@ -19,8 +20,16 @@
         </header>
         <main>
         <img src="img/google-logo.png" alt="logo of Google.com">
-        <br>
-        <input type="text">
+        <div id="search-box">
+          <form action="https://www.giovannylimin.github.io/google-homepage/hard-version">
+            <input type="text" id="search" value="">
+            <input type="reset" value="">
+          </form>
+          <div id="tooltip">
+            <input type="image" id="mic" src="img/google-mic-icon.png" alt="Search by voice">
+            <br><span id="tooltip-text">Search by voice</span>
+          </div>
+        </div>
         <div>
             <button>Google Search</button>
             <button>I'm Feeling Lucky</button>
