@@ -149,7 +149,7 @@ input:focus + input[type="reset"]{
     margin: 18px 0 0 -77.5px;
     padding: 7px 8px;
   }
-  
+
   #tooltip-text::after{
     content: "";
     color: black;
@@ -168,3 +168,50 @@ input:focus + input[type="reset"]{
   #tooltip:active{
       visibility: visible;
   }
+
+  /*
+================
+MAIN BUTTONS
+================
+*/
+
+.others{
+    display: flex;
+    justify-content: center;
+}
+
+.others button{
+    box-sizing: border-box;
+    margin: 0px 5px;
+    padding: 8px 10px;
+    border: solid 1px;
+    border-color: #efefef;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #666666;
+    background-color: #efefef;
+
+}
+.others button:hover{
+    border: solid 1px #bbbbbb;
+    background-color: #f1f1f1;
+    color: #333333;
+}
+p{
+    margin: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #333333;
+}
+p a{
+    margin: 0 5px;
+}
+p a:link{
+    color: #2222bb;
+}
+p a:hover{
+    text-decoration: underline;
+}
+p a:visited{
+    color: #2222bb;
+}
