@@ -2,47 +2,57 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Google</title>
+        <title>build this webpage - Google Search</title>
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="img/google-search-icon.png" rel="icon" type="image/png" sizes="16x16">
+        <link href="img/favicon.png" rel="icon" type="image/png" sizes="16x16">
     </head>
     <body>
         <header>
-          <img src="img/google-logo.png" alt="logo of Google.com">
-          <div id="search-box">
+          <div class="top">
+            <img src="img/google-logo.png" alt="logo of Google.com">
+            <div id="search-box">
             <form action="https://www.giovannylimin.github.io/google-homepage/difficult-version">
-              <input type="text" id="search" value="">
+              <input type="text" id="search" value="build this webpage">
               <input type="reset" value="" id="reset">
-              <input type="submit" value="" id="search">
+              <input type="submit" value="">
             </form>
             <div id="tooltip">
               <input type="image" id="mic" src="img/google-mic-icon.png" alt="Search by voice">
               <br><span id="tooltip-text">Search by voice</span>
             </div>
+            </div>
+            <ul>
+              <li><button><i class="material-icons">apps</i></button></li>
+              <li id="profile"><input type="image" src="./img/medical-assistance-4.png" alt="Profile picture"></li>
+              <span id="message">Let's fight COVID-19<br>with #StayAtHome <span style="font-style: normal;">&#127968;<span></span>
+            </ul>
           </div>
-          <ul>
-            <li><button><i class="material-icons">apps</i></button></li>
-            <li id="profile"><input type="image" src="./img/medical-assistance-4.png" alt="Profile picture"></li>
-            <span id="message">Let's fight COVID-19<br>with #StayAtHome <span style="font-style: normal;">&#127968;<span></span>
-          </ul>
-            <nav>
+          <nav>
+            <ul>
+              <li id="all"><a href="#"><img src="img/search-color.png">All</a></li>
+              <li><a href="#"><img src="img/news.png">News</a></li>
+              <li><a href="#"><img src="img/maps.png">Maps</a></li>
+              <li><a href="#"><img src="img/videos.png">Videos</a></li>
+              <li><a href="#"><img src="img/images.png">Images</a></li>
+              <li><a href="#"><img src="img/more.png">More</a></li>
+              <div id= "dropdown">
                 <ul>
-                    <li><i class="material-icons">search</i><a href="#">All</a></li>
-                    <li><i class="material-icons">library_books</i><a href="#">News</a></li>
-                    <li><i class="material-icons">place</i><a href="#">Maps</a></li>
-                    <li><i class="material-icons">slideshow</i><a href="#">Videos</a></li>
-                    <li><i class="material-icons">crop_original</i><a href="#">Images</a></li>
-                    <li><i class="material-icons">more_vert</i><a href="#">More</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Tools</a></li>                  
-                </ul>
-                <ul>
-                  <li><a href="#">SafeSearch on</a></li>
-                </ul>
-            </nav>
+                  <li><a href="#"><img src="img/shopping.png">Shopping</a></li>
+                  <li><a href="#"><img src="img/books.png">Books</a></li>
+                  <li><a href="#"><img src="img/flights.png">Flights</a></li>
+                  <li><a href="#"><img src="img/finance.png">Finance</a></li>
+                  </ul>
+              </div>
+            </ul>
+            <ul>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#" id="tools">Tools</a></li>                  
+            </ul>
+            <ul class="right">
+              <li><a href="#">SafeSearch on</a></li>
+            </ul>
+          </nav>
         </header>
         <main>
         <p>About 115,000,000 results (0.53 seconds)</p>

@@ -54,78 +54,60 @@ END OF RESET
 ==================
 */
 
-*{
+*, a{
     font-family: Arial;
 }
-
 html{
-    min-width: 800px;
+    width:100vw;
+    min-width: 900px;
     overflow: scroll;
 }
-body{
-    overflow: scroll;
-    background-color: #FFFFFF;
-}
-a{
-    text-decoration: none;
-    font-family: Arial;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 button{
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
-
 /*
 ================
 HEADER
 ================
 */
-header{
-    margin: 30px 30px;
+.top{
+    border: 1px solid transparent;
+    height: 90px;
+    display: flex;
+    align-items: center;
 }
-
-header img{
+/* Google logo*/
+.top img{
+    margin: 25px;
     width: 100px;
 }
+/* Search bar */
 #search-box{
-    box-sizing: border-box;
-    margin: 0;
-    width: 455px;
-    height: 50px;
-    position: relative;
-    border: 2px solid;
+    border: 1px solid transparent;
+    display: inline-block;
+    position: absolute;
+    left: 140px;
+    height: 48px;
 }
 #search{
-    visibility: visible;
-    display: inline-block;
-    position: absolute;
-    height: 40px;
-    width: 400px;
+    box-sizing: border-box;
+    height: 45px;
+    width: 600px;
     border: 1px solid #dddddd;
-    border-radius: 30px;
-    background-image: url(./img/search.png);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 15px 12px;
-    padding-left: 50px;
+    border-radius: 50px;
+    padding-left: 20px;
     font-size: 15.5px;
 }
-
+#search:focus , #search:hover{
+    outline: none;
+    box-shadow: 0px 0px 5px #dddddd;
+}
 #reset{
-    display: inline-block;
-    visibility: hidden;
+    visibility: visible;
     transition-delay: 0.1s;
-    background-color: #ffffff;
+    background-color: transparent;
     position: absolute;
-    right: 50px;
+    right:88px;
     top: 8px;
     background-image: url(./img/close-icon.png);
     background-repeat: no-repeat;
@@ -137,139 +119,182 @@ header img{
     border: solid 1px;
     border-color:transparent #dddddd transparent transparent;
 }
-
-#search:focus + #reset {
-    visibility: visible;
-}
-
-#search:focus{
-    outline: none;
-    box-shadow: 0px 0px 5px #dddddd;
-}
-
-#search:hover{
-    box-shadow: 0px 0px 5px #dddddd;
-}
-
+/*microphone*/
 #mic{
-    position: absolute;
-    top: 12px;
-    right: 25px;
     width: 13px;
 }
-
+#tooltip{
+    position: absolute;
+    top: 12px;
+    right: 58px;
+    width: 13px;
+    height: 23px;
+}
 #tooltip-text{
     visibility: hidden;
+    z-index: 1;
+    font-family: arial;
     font-size: 11px;
     color: #FFFFFF;
     background-color: #333333;
     font-weight: bold;
-    position: absolute;
     text-align: center;
-    top: 50px;
-    right: -18px;
-    padding: 7px 8px;
-  }
-
-  #tooltip-text::after{
+    position: absolute;
+    top: 40px;
+    right: -43px;
+    width: 85px;
+    padding: 7px 8px;  
+}
+#tooltip-text::after{
     content: "";
-    color: black;
     position: absolute;
     bottom: 100%;
+    left: 50%;
     border: solid 5px;
     border-color: transparent transparent#333333 transparent;
     margin-left: -5px;
-    left: 50%;
-  }
-
-  #tooltip:hover #tooltip-text{
+}
+#tooltip:hover #tooltip-text, #tooltip:active #tootltip-text{
       visibility: visible;
-  }
-
-  #tooltip:active{
-      visibility: visible;
-  }
-
-header ul{
-    margin: 10px 20px;
+}
+input[type="submit"]{
+    position: absolute;
+    top:7px;
+    right: 12px;
+    background-image: url(img/search.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.top ul{
+    position: absolute;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    left: 765px;
+    width: calc(100vw - 770px);
+    min-width: 130px;
 }
-
-header li {
-    display: inline-block;
-    box-sizing: border-box;
-    margin: 8px;
-    font-size: 14px;
-}
-
-header li button{
+.top li button{
+    margin-right: 15px;
     background-color: transparent;
-    box-shadow: transparent;
     border: transparent;
     opacity: 0.5;
 }
-
-header li input[type="image"]{
-    height: 36px;
-}
-
-header li a:link{
-    text-decoration: none;
-    color: #555555;
-}
-
-header li a:hover{
-    opacity: 0.9;
-    text-decoration: underline;
-}
-
-header li a:visited{
-    color:#555555
-}
-
-header li button:hover{
+.top li button:hover{
     opacity: 0.7
 }
-
+/* profile */
+#profile input{
+    margin-right: 30px;
+    width: 40px;
+}
 #message{
-    visibility: hidden;
+    z-index: 1;
+    width: 120px;
     position: absolute;
-    top: 70px;
+    top: 50px;
+    right: 25px;
     font-family: Arial;
     font-style: italic;
     color: #ffffff;
     font-size: 12px;
     background-image: linear-gradient(to bottom left, #aa4b6b, #6b6b83, #3b8d99 );
-    border: 1px solid;
-    line-height: 16px;
-    padding: 10px;
+    line-height: 18px;
+    padding: 8px;
     border-radius: 5px;
     text-align: right;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s ease-in-out;
 }
-
 #message::after{   
     content: "";
-    border: solid 10px;
+    border: solid 8px;
     border-color: transparent transparent #aa4b6b transparent;
     position: absolute;
-    color: white;
-    top: -20px;
-    right: 18px;
+    top: -15px;
+    right: 17px;
 }
-
-#profile:hover + #message{
-    visibility: visible;
+#profile:hover + #message, #profile:active +#message{
     opacity: 1;
 }
-
-#profile:active +#message{
-    visibility: visible;
+/* Search Modes */
+header nav{
+    border-bottom: 1px solid #dddddd;
+    margin-top: -5px;
 }
+header ul:first-child{
+    margin-left: 150px;
+}
+header li a:link{
+    text-decoration: none;
+    color: #555555;
+}
+header li a:visited{
+    color:#555555
+}
+header nav ul{
+    display: inline-block;
+    margin-right: 25px;
+}
+header nav li{
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 8px;
+}
+nav img{
+    height: 18px;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+}
+#dropdown ul{
+    position: absolute;
+    top: 115px;
+    left: 340px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+
+}
+#dropdown li{
+    display: block;
+    padding: 3px 5px 8px 8px;
+}
+
+
+
+
+#all{
+    display: inline-block;
+    color:#0084ff;
+    padding-bottom: 10px;
+    border-bottom: #0084ff solid 3px;
+}
+
+header .right {
+    position: relative;
+    margin-right: 30px;
+    top: 8px;
+    float: right;
+    z-index: -1;
+}
+
+#tools{
+    border: 1px solid transparent;
+    padding: 6px 12px;
+}
+#tools:hover{
+    border: 1px solid #bbbbbb;
+    background-image: linear-gradient(#f1f1f1,#fafafa);
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #dddddd;
+}
+
 /*
 ================
 SEARCH BAR
@@ -338,8 +363,6 @@ FOOTER
 
 footer{
     /*border-top: 1px solid #bbbbbb;*/
-    position: absolute;
-    bottom: 0px;
     width:100%;
     background-color: #efefef;
     border-top: #dddddd solid 1px;
