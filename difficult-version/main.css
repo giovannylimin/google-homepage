@@ -305,22 +305,27 @@ MAIN BODY
 ================
 */
 main{
-    margin: 0 0 0 160px;
+    margin-left: 160px;
     width: 565px;
 }
 #speed-info{
     margin-top: 15px;
 }
+section, article{
+    margin: 30px 0
+}
+/* the recommendation */
 .border{
+    margin-top: 15px;
     border: 1px solid #dddddd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 #rec p{
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 16px;
-    color: #000000;
+    color: #333333;
 }
 #rec + div{
     font-size: 12px;
@@ -340,6 +345,7 @@ main{
 #rec + div a:hover{
     text-decoration: underline;
 }
+/* articles */
 main p{
     display: inline-block;
     margin-top: 10px;
@@ -378,70 +384,172 @@ main a span:last-of-type::after{
 }
 main a h2{
     font-size:20px;
-    color: #1111aa;
     margin-top: 8px;
+}
+main a:link{
+    color:#1111aa;
+}
+main a:visited{
+    color: #5a0294;
 }
 main a h2:hover{
     text-decoration: underline;
 }
-
-section, article{
-    margin: 30px 0
+.gbooks-detail{
+    font-size: 14px;
+    line-height: 22px;
+    color: #888888;
 }
-
-
-
-
-  /*
+/* Similar Questions */
+#sim{
+    padding: 0px;
+}
+.border > h2{
+    font-size: 20px;
+    padding: 15px 20px;
+}
+#sim details summary::-webkit-details-marker{
+    display: none;
+}
+#sim details{
+    border-top: 1px solid #dddddd;
+    display: block;
+    color: #333333;
+}
+#sim details summary{
+    padding: 15px 20px;
+}
+#sim details summary::after{
+    content: url(img/arrow-down.png);
+    float: right;
+}
+#sim details summary:focus{
+    outline: none;
+}
+#sim .content{
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 27px;
+}
+#sim p{
+    font-size: 15px;
+    color: #333333;
+}
+#sim .content ol{
+    margin-top: 8px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+#sim .content a{
+    display: inline-block;
+    margin-top: 15px;
+}
+#sim .content h2{
+    margin: 0;
+}
+#sim time{
+    display: inline-block;
+    font-size: 13px;
+}
+.search-for{
+    display: inline-block;
+    margin: 0 0 13px 0;
+}
+.search-for a:link{
+    color: #1111aa;
+}
+.search-for a:visited{
+    color: #331199;
+}
+.search-for a:hover{
+    text-decoration: underline;
+}
+/* Related Searches */
+.rel-search h2{
+    margin-bottom: 15px;
+}
+.rel-search ul{
+    column-count: 2;
+}
+.rel-search li{
+    background-image: url(img/search-link.png);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 0px 10px;
+    padding: 12px 0 12px 25px;
+    border-bottom: solid 1px #dddddd;
+}
+.rel-search .last{
+    border-bottom: solid 1px transparent;
+}
+.rel-search a strong{
+    font-weight: bold;
+}
+/* Google Pages Navigator */
+main nav img{
+    width: 325px;
+    display: block;
+    margin: 0px auto;
+}
+main nav ol{
+    width:300px;
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+main nav li{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 8.8px;
+}
+main nav a:link{
+    color: #0084ff;
+}
+main nav a:visited{
+    color: #0084ff;
+}
+main nav .one{
+    color: #555555 !important;
+}
+.ten{
+    position: relative;
+    left: -5px;
+}
+.next{
+    position: relative;
+    left: 44px;
+;}
+/*
 ================
 FOOTER
 ================
 */
-
 footer{
-    /*border-top: 1px solid #bbbbbb;*/
     width:100%;
     background-color: #efefef;
     border-top: #dddddd solid 1px;
     display:flex;
     flex-direction: column;
 }
-
 #location{
     float:left;
     font-family: Arial;
     color: #888888;
     font-size: 15px;
-    padding: 12px;
-    margin-left: 10px;
+    padding: 12px 0;
+    margin-left: 160px;
 }
-
 footer nav{
-    overflow: hidden;
+    padding-left: 160px;
     background-color: #efefef;
     border-top: 1px solid #dddddd;
-
 }
-
 footer nav ul li{
     display: inline-block;
-    box-sizing: border-box;
-    margin: 10px 10px;
+    margin: 12px 20px 12px 0;
     font-size: 14px;
 }
-
 footer nav a{
     font-family: Arial;
-    color: #666666
-}
-
-.left{
-    clear: left;
-    float: left;
-    margin-left: 10px;
-}
-
-.right{
-    clear: right;
-    float: right;
+    color: #666666;
+    text-decoration: none;
 }
