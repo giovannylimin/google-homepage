@@ -2,7 +2,8 @@
 This is my first project for [The Odin Project](https://www.theodinproject.com) Web Development 101.
 The aim is to build the [Google.com](https://www.google.com) homepage.
 
-Here's my project's appearance for the [easy version](https://www.giovannylimin.github.io/google-homepage/easy-version/)
+Here's my project's appearance for the [easy version](https://giovannylimin.github.io/google-homepage/easy-version/)
+and here's for the [difficult version](https://giovannylimin.github.io/google-homepage/difficult-version/_)
 
 
 
