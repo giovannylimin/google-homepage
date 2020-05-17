@@ -5,11 +5,13 @@ The aim is to build the [Google.com](https://www.google.com) homepage.
 Here's my project's appearance for the [easy version](https://giovannylimin.github.io/google-homepage/easy-version/)
 and here's for the [difficult version](https://giovannylimin.github.io/google-homepage/difficult-version/)
 
-
+Anyway, this project is made in my corona quarantine, so I used the medical staff image for the profile picture and if you hover over it, it will show a message!
 
 ===============================================
 
 My experience while doing this project:
+
+*Easy version*
 
 I used CSS flex for the header and footer.
 
@@ -27,7 +29,16 @@ I removed the default input outline (blue highlight) in the searchbar and styled
 
 I down-sized the images used in icons to make it load faster.
 
-This project is made in my corona quarantine, so I used the medical staff image for the profile picture and if you hover over it, it will show a message!
+*Difficult Version*
 
-contact me via instagram: 
-[@giovanny.limin](https://www.instagram.com/giovanny.limin)
+I set the `min-width: 900px;` for `<html>`, and positioned the elements from the left, the only thing that floats to the right is the profile picture.
+
+I reused the code in the easy version for the header and footer part, with extra adjustments. 
+
+I tried to make my form in the searchbar to redirect to another page by using the `action` attribute, however my link is broken because it always shows the privacy error, but if I typed it manually, it shows no problem.
+
+I just realized that I made typo to the link:
+`https://www.giovannylimin.github.io/`
+I typed the extra `www` which is incorrect.
+What it should be:
+`https://giovannylimin.github.io/`
